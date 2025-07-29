@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: plain.bst
+Database file #1: thesis.bib
+Warning--entry type for "aspect-doi-v2.5.0" isn't style-file defined
+--line 409 of file thesis.bib
+You've used 78 entries,
+            2118 wiz_defined-function locations,
+            955 strings with 20592 characters,
+and the built_in function-call counts, 29717 in all, are:
+= -- 2769
+> -- 1891
+< -- 4
++ -- 757
+- -- 668
+* -- 2493
+:= -- 5182
+add.period$ -- 243
+call.type$ -- 78
+change.case$ -- 563
+chr.to.int$ -- 0
+cite$ -- 78
+duplicate$ -- 872
+empty$ -- 1973
+format.name$ -- 668
+if$ -- 5935
+int.to.chr$ -- 0
+int.to.str$ -- 78
+missing$ -- 74
+newline$ -- 399
+num.names$ -- 160
+pop$ -- 453
+preamble$ -- 1
+purify$ -- 484
+quote$ -- 0
+skip$ -- 595
+stack$ -- 0
+substring$ -- 1701
+swap$ -- 103
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 306
+warning$ -- 0
+while$ -- 232
+width$ -- 80
+write$ -- 873
+(There was 1 warning)
