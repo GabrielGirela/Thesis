@@ -41,7 +41,7 @@
 \contentsline {subsubsection}{Heat capacity}{40}{subsubsection*.28}%
 \contentsline {subsubsection}{Thermal conductivity}{43}{subsubsection*.30}%
 \contentsline {subsubsection}{Viscosity}{45}{subsubsection*.32}%
-\contentsline {subsubsection}{Latent heat}{47}{subsubsection*.35}%
+\contentsline {subsubsection}{Latent heat}{50}{subsubsection*.35}%
 \contentsline {section}{\numberline {2.4}Simulation setup}{51}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Simulation domain}{52}{subsection.2.4.1}%
 \contentsline {subsubsection}{Magma domain}{52}{subsubsection*.36}%
@@ -51,4 +51,6 @@
 \contentsline {section}{\numberline {3.1}Typology of the results}{56}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Base simulation results}{57}{section.3.2}%
 \contentsline {subsubsection}{Temperature}{57}{subsubsection*.41}%
-\contentsline {chapter}{Bibliography}{59}{section*.42}%
+\contentsline {subsubsection}{Velocity}{58}{subsubsection*.44}%
+\contentsline {subsubsection}{Pressure}{58}{subsubsection*.46}%
+\contentsline {chapter}{Bibliography}{63}{section*.48}%
