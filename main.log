@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.7.29)  31 JUL 2025 11:46
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.7.29)  2 AUG 2025 10:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2375,17 +2375,26 @@ File: img/chapter3/integrated_1.png Graphic file (type bmp)
 <img/chapter3/integrated_1.png>
 File: img/chapter3/rocks_2_points.png Graphic file (type bmp)
 <img/chapter3/rocks_2_points.png>
+
+
+LaTeX Warning: Reference `fig:velocity_arrows' on page 58 undefined on input li
+ne 62.
+
 File: img/chapter3/velocity/velocities.png Graphic file (type bmp)
 <img/chapter3/velocity/velocities.png>
 File: img/chapter3/velocity/random_point.png Graphic file (type bmp)
 <img/chapter3/velocity/random_point.png>
+File: img/chapter3/velocity/arrows_scaled.png Graphic file (type bmp)
+<img/chapter3/velocity/arrows_scaled.png>
+
+LaTeX Warning: Reference `fig:dp_early' on page 58 undefined on input line 88.
+
 File: img/chapter3/pressure/0_p.png Graphic file (type bmp)
 <img/chapter3/pressure/0_p.png>
 File: img/chapter3/pressure/dp.png Graphic file (type bmp)
 <img/chapter3/pressure/dp.png>
-File: img/chapter3/pressure/integrated_dp.png Graphic file (type bmp)
-<img/chapter3/pressure/integrated_dp.png>
-)
+File: img/chapter3/pressure/integrated_dp_1.png Graphic file (type bmp)
+<img/chapter3/pressure/integrated_dp_1.png>
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2404,6 +2413,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [59]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2422,6 +2434,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [61]
+File: img/chapter3/pressure/dp_2.png Graphic file (type bmp)
+<img/chapter3/pressure/dp_2.png>
+)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2431,6 +2446,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [62]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[63]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[64]
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 (Font)              scaled to size 10.95pt on input line 247.
  (./main.bbl
@@ -2442,7 +2475,7 @@ Underfull \hbox (badness 3492) in paragraph at lines 47--51
 hreys.  Magma heating by
  []
 
-[63
+[65
 
 
 ]
@@ -2451,24 +2484,6 @@ Underfull \hbox (badness 1701) in paragraph at lines 115--119
 t of thermal energy within magma–
  []
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[64]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[65]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2496,6 +2511,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [68]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[69]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[70]
 Underfull \hbox (badness 2088) in paragraph at lines 463--468
 []\TU/TeXGyreTermesX(0)/m/n/10.95 Kristján Sœmundsson.  Geology of krafla volca
 nic system.  In Árni Einarsson
@@ -2509,7 +2542,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[69])
+[71])
 
 Package glossaries Warning: No \printglossary or \printglossaries found. 
 (Remove \makeglossaries if you don't want any glossaries.) 
@@ -2523,21 +2556,34 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[70] (./main.aux)
+[72] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7FA16C1DFFAAB081DB5B73CA9EBAE744;4213.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 7FA16C1DFFAAB081DB5B73CA9EBAE744;4213
+(rerunfilecheck)             After:  93F8578B6A1B357EB815B0227A56AB8E;4213.
  ) 
 Here is how much of TeX's memory you used:
- 38523 strings out of 476835
- 733982 string characters out of 5803245
- 1935627 words of memory out of 5000000
- 59616 multiletter control sequences out of 15000+600000
+ 38543 strings out of 476835
+ 734708 string characters out of 5803245
+ 1938627 words of memory out of 5000000
+ 59634 multiletter control sequences out of 15000+600000
  623700 words of font info for 222 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  106i,18n,107p,4082b,734s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (80 pages).
+Output written on main.pdf (82 pages).

@@ -59,7 +59,7 @@ Figure \ref{fig:temperature}a shows the temperature evolution over 500 hundred y
 
 
 \subsubsection{Velocity}
-Initial velocity is set to be zero at the boundaries, for the whole duration of the simulations, and a value close to zero, $1\times10^{-8}$ m/s in this case, in order to favor numerical stability. Immediately after the first few time steps, convection begins, developing clear convective cells, easily visible in figure \ref{fig:velocity}a. The faster velocity registered during the simulation is 0.0049 m/s at the early stages of the simulation, specifically after 0.7 years (8.4 months). From this point on, the highest simulated velocities are always slower, behaving similarly as the temperature and semi-stabilizing oscillating between values of the order of  $1\times10^{-4}$ m/s and $1\times10^{-5}$ m/s. This 
+Initial velocity is set to be zero at the boundaries, for the whole duration of the simulations, and a value close to zero, $1\times10^{-8}$ m/s in this case, in order to favor numerical stability. Immediately after the first few time steps, convection begins, developing clear convective cells, easily visible in figure \ref{fig:velocity}a. The faster velocity registered during the simulation is 0.0049 m/s at the early stages of the simulation, specifically after 0.7 years (8.4 months). A snapshot of the simulation at this time is portrayed in \ref{fig:velocity_arrows}, with the flow arrows scaled to their velocity. It can be appreciated that the maximum velocities occur on the central convection cells, while the lateral ones are slower.  From this moment on, the highest simulated velocities are always slower, behaving similarly as the temperature and semi-stabilizing oscillating between values of the order of  $1\times10^{-4}$ m/s and $1\times10^{-5}$ m/s. This 
 As time progresses, convection slows down and evolves into less organized and defined state, exhibiting a more chaotic behavior.
 \begin{figure}
 	\centering
@@ -76,8 +76,16 @@ As time progresses, convection slows down and evolves into less organized and de
 	\label{fig:velocity}
 \end{figure}
 
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{img/chapter3/velocity/arrows_scaled.png}
+	\caption{Temperature field for the 2D convection 1c benchmark once it has reached the final steady state stage}
+	\label{fig:velocity_arrows}
+\end{figure}
+
 
 \subsubsection{Pressure}
+Initial pressure, as mentioned in the simulation setup section, is set to 45 MPa at the rooftop of the body for the \textit{base} simulation. A magmastatic pressure profile, accounting for the depth and density of the overlying magma at any point, rising the pressure up to ~52 MPa at the bottom of the magma chamber as can be seen in \ref{fig:pressure}a. Trough the simulation, pressure changes are smoother, relative to other quantities such as temperature and velocity. In \ref{fig:pressure}b and c the change in pressure, namely \textit{dp}, representing the difference in pressure between the current (\textit{t}) and the previous time step \textit{t-1} is plotted. After an initial drop of 500 Pa during the first 50 years, the global pressure rises around 2200 Pa with an apparent logarithmic trend after 500 years.  The change in pressure distribution, however, is clearly dominated by two distinct regions. On the rooftop of the chamber pressure decreases, creating and under pressure anomaly trough the total of the simulated time. Similarly, the bottom of the chamber is characterized by over pressure. At the early stages, however, this overpressure stratification is not so clear, and more features are visible. Figure \ref{fig:dp_early} shows the evolution of the pressure at 0.5, 0.7, 1 and 2 years. At the very beginning of the simulation, the previously mentioned stratification is shifted, with an over-pressurized area at the top, and a under-pressurized zone at the bottom. However, in both boundaries some points show a different behavior: there are areas at the bottom of the chamber that push upwards, thus increasing the local pressure, and the other way around, some areas sink, which translates into local pressure decreases. This is particularly easy to see in the 0.7 years snapshot. Continuing with the temporal evolution, after 1 year the shifting into the soon to be normal stratification (over-pressure at the bottom and under-pressure at the top) becomes more evident, which culminates after 2 years, where this final stage is reached. This interesting and surprising process will be further discussed in the following chapter.
 \begin{figure}
 	\centering
 	\begin{tikzpicture}
@@ -89,10 +97,17 @@ As time progresses, convection slows down and evolves into less organized and de
 		\node[anchor=north east, xshift=-8pt, yshift=-5pt] at (img2.north east) {\textbf{(b)}};
 	\end{tikzpicture}
 	\begin{tikzpicture}
-		\node[inner sep=0pt] (img2) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/pressure/integrated_dp.png}};
+		\node[inner sep=0pt] (img2) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/pressure/integrated_dp_1.png}};
 		\node[anchor=north east, xshift=-8pt, yshift=-5pt] at (img2.north east) {\textbf{(c)}};
 	\end{tikzpicture}
 	\caption{a) Shows snapshots of the simulations at different times up to 500 years. 
 		b) Shows the integrated temperature over the whole domain}
 	\label{fig:pressure}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{img/chapter3/pressure/dp_2.png}
+	\caption{Temperature field for the 2D convection 1c benchmark once it has reached the final steady state stage}
+	\label{fig:dp_early}
 \end{figure}
