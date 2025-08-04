@@ -58,9 +58,9 @@
 \fancyhead{}
 \fancyfoot{}
 %% make the odd pages have the section name on the top right
-\fancyhead[RO]{\sffamily\bfseries\nouppercase{\rightmark}}
+\fancyhead[RO]{\rmfamily\bfseries\nouppercase{\rightmark}}
 %% make the even pages have the chapter name on the top left
-\fancyhead[LE]{\sffamily\bfseries\nouppercase{\leftmark}}
+\fancyhead[LE]{\rmfamily\bfseries\nouppercase{\leftmark}}
 
 %% Add author name and institution to the bottom of the page
 %\fancyfoot[RE,LO]{\textit{\@author}}
@@ -70,11 +70,11 @@
 %% put the page numbers on the bottom in a nice box
 %% even side pages
 %\fancyfoot[LE]{\psboxit{box 0.8 setgray fill}
-%{\framebox[10mm][c]{\rule{0cm}{4mm}\color{black}{\bfseries \thepage}}}}
+	%{\framebox[10mm][c]{\rule{0cm}{4mm}\color{black}{\bfseries \thepage}}}}
 %% odd side pages
 %\fancyfoot[RO]{\psboxit{box 1 setgray fill}
-%{\hspace{\textwidth}\psboxit{box 0.8 setgray fill}
-%{\framebox[10mm][c]{\rule{0cm}{4mm}\color{black}{\bfseries \thepage}}}}}
+	%{\hspace{\textwidth}\psboxit{box 0.8 setgray fill}
+		%{\framebox[10mm][c]{\rule{0cm}{4mm}\color{black}{\bfseries \thepage}}}}}
 
 %% make the bottom line above the page number box
 %\renewcommand{\footrulewidth}{0.4pt}
@@ -86,16 +86,16 @@
 %% now redefine the plain style pages (chapter pages, contents pages)
 %% to have the same page number stuff on the bottom
 \fancypagestyle{plain}{
-\fancyhf{}
-\fancyfoot[CE,CO]{\thepage}
-%\fancyfoot[RE,LO]{\textit{\@author}}
-%\fancyfoot[CE,CO]{\small{Universit\'a di Pisa}}
-%\fancyfoot[RO]{\psboxit{box 1 setgray fill}
-%{\hspace{\textwidth}\psboxit{box 0.8 setgray fill}
-%{\framebox[10mm][c]{\rule{0cm}{4mm}\color{black}{\bfseries \thepage}}}}}
-%\renewcommand{\headrulewidth}{0pt}
-%\renewcommand{\footrulewidth}{0.4pt}
-%\renewcommand{\footruleskip}{-0.1mm}
+	\fancyhf{}
+	\fancyfoot[CE,CO]{\thepage}
+	%\fancyfoot[RE,LO]{\textit{\@author}}
+	%\fancyfoot[CE,CO]{\small{Universit\'a di Pisa}}
+	%\fancyfoot[RO]{\psboxit{box 1 setgray fill}
+		%{\hspace{\textwidth}\psboxit{box 0.8 setgray fill}
+			%{\framebox[10mm][c]{\rule{0cm}{4mm}\color{black}{\bfseries \thepage}}}}}
+	%\renewcommand{\headrulewidth}{0pt}
+	%\renewcommand{\footrulewidth}{0.4pt}
+	%\renewcommand{\footruleskip}{-0.1mm}
 }
 
 %% this next section (till \makeatother) makes sure that blank pages
@@ -120,12 +120,12 @@
 %% Alternative Chapter Style
 \RequirePackage[Sonny]{fncychap} % Sonny was Bjornstrup
 \ChNumVar{\fontsize{76}{80}\usefont{OT1}{pzc}{m}{n}\selectfont}
-\ChTitleVar{\raggedleft\LARGE\sffamily\bfseries}
+\ChTitleVar{\raggedleft\LARGE\rmfamily\bfseries}
 
 %% now change the section heading to have a line beneath it
 %% load up the fancy title-style package
 \RequirePackage[calcwidth]{titlesec}
-\titleformat{\section}[hang]{\sffamily\bfseries}
+\titleformat{\section}[hang]{\rmfamily\bfseries}
 {\Large\thesection}{12pt}{\large}[{\titlerule[0.5pt]}]
 
 %% Used to have big letters at the beginning of each Chapter
@@ -141,7 +141,7 @@
 %\setlength{\cftbeforechapskip}{2ex}
 %\setlength{\cftbeforesecskip}{0.5ex}
 \renewcommand{\cftchapfont}{%
-\usefont{OT1}{phv}{bc}{n}\selectfont
+	\rmfamily\bfseries
 }
 \makeatletter
 \renewcommand{\@pnumwidth}{1.75em}
@@ -152,10 +152,10 @@
 %% glossary
 \RequirePackage[toc,acronym]{glossaries}
 \newglossarystyle{thesisglossary}{%
-    \setglossarystyle{long}% base this style on the long style
-    \setacronymstyle{long-short}
-    \renewcommand*{\glsgroupheading}[1]{%
-    \textbf{\glsgetgrouptitle{##1}}\\}
+	\setglossarystyle{long}% base this style on the long style
+	\setacronymstyle{long-short}
+	\renewcommand*{\glsgroupheading}[1]{%
+		\textbf{\glsgetgrouptitle{##1}}\\}
 }
 \setglossarystyle{thesisglossary}
 

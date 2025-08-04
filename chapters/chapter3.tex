@@ -42,7 +42,7 @@ Figure \ref{fig:temperature}a shows the temperature evolution over 500 hundred y
 	\end{tikzpicture}
 	\begin{tikzpicture}
 		\node[inner sep=0pt] (img2) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/integrated_1.png}};
-		\node[anchor=north east, xshift=-8pt, yshift=-5pt] at (img2.north east) {\textbf{(b)}};
+		\node[anchor=north east, xshift=-8pt, yshift=-20pt] at (img2.north east) {\textbf{(b)}};
 	\end{tikzpicture}
 	
 	\caption{a) Shows snapshots of the simulations at different times up to 500 years. 
@@ -69,7 +69,7 @@ As time progresses, convection slows down and evolves into less organized and de
 	\end{tikzpicture}
 	\begin{tikzpicture}
 		\node[inner sep=0pt] (img2) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/velocity/random_point.png}};
-		\node[anchor=north east, xshift=-8pt, yshift=-5pt] at (img2.north east) {\textbf{(b)}};
+		\node[anchor=north east, xshift=-8pt, yshift=-20pt] at (img2.north east) {\textbf{(b)}};
 	\end{tikzpicture}
 	\caption{a) Shows snapshots of the simulations at different times up to 500 years. 
 		b) Shows the integrated temperature over the whole domain}
@@ -98,7 +98,7 @@ Initial pressure, as mentioned in the simulation setup section, is set to 45 MPa
 	\end{tikzpicture}
 	\begin{tikzpicture}
 		\node[inner sep=0pt] (img2) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/pressure/integrated_dp_1.png}};
-		\node[anchor=north east, xshift=-8pt, yshift=-5pt] at (img2.north east) {\textbf{(c)}};
+		\node[anchor=north east, xshift=-8pt, yshift=-20pt] at (img2.north east) {\textbf{(c)}};
 	\end{tikzpicture}
 	\caption{a) Shows snapshots of the simulations at different times up to 500 years. 
 		b) Shows the integrated temperature over the whole domain}
@@ -110,4 +110,33 @@ Initial pressure, as mentioned in the simulation setup section, is set to 45 MPa
 	\includegraphics[width=1\linewidth]{img/chapter3/pressure/dp_2.png}
 	\caption{Temperature field for the 2D convection 1c benchmark once it has reached the final steady state stage}
 	\label{fig:dp_early}
+\end{figure}
+
+\subsection{Secondary variables}
+Following the analysis of the three primary variables, the secondary variables or properties are presented. These are the magma properties, which define the physical parameters of the magma, and are necessary to solve the transport equations in a realistic and physical way. They give physical meaning to the solution. These properties are crystal, gas and melt fractions, density, heat capacity, thermal conductivity and viscosity.
+The behavior of the properties is similar in all cases, since they are in all cases computed as de weighted average of all the phases present in the magma.
+
+\subsubsection{Phase fractions}
+Figure \ref{fig:vf_c_g} shows different snapshots of the simulation at different times. On the left column the volume fraction of gas is shown, while on the right column it is the volume fraction of crystals. Crystals start to form at the boundaries, where the heat is being lost, although, as it can be seen, there is no crystallization front developing. Some batches can be seen further in time, but they are not permanent and never develop further than some meters from the boundary. The exsolved volatiles phase behaves similarly, although there is a clear distribution of the gas, with higher content on the top of the body with respect to the bottom.
+Figure \ref{fig:integrated_vf_c}, on the other hand, shows the integrate crystal volume fraction profiles for the entire domain (\ref{fig:integrated_vf_c} a, green line), the top boundary (\ref{fig:integrated_vf_c} b, red line) and the bottom boundary (\ref{fig:integrated_vf_c} b, blue line). The total crystallinity of the system follows a positive trend, with the total amount of crystal fraction increasing with time, as the overall temperature of the system decreases. However, the crystal fraction at the boundaries behaves opposite to this: the total amount of crystals decreases with time. This is an interesting result, as it opposes the expected behavior of a cooling magmatic chamber, and will be further explained in the next chapter.
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{img/chapter3/secondary_props/vf_c_g.png}
+	\caption{Volume fraction of gas and crystals}
+	\label{fig:vf_c_g}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\begin{tikzpicture}
+		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/secondary_props/integrated_vf_c_domain.png}};
+		\node[anchor=north east, xshift=-8pt, yshift=-40pt] at (img1.north east) {\textbf{(a)}};
+	\end{tikzpicture}
+	\begin{tikzpicture}
+		\node[inner sep=0pt] (img2) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/secondary_props/integrated_vf_c_boundaries.png}};
+		\node[anchor=north east, xshift=-8pt, yshift=-30pt] at (img2.north east) {\textbf{(b)}};
+	\end{tikzpicture}
+	\caption{a) Integrated crystal fraction over the whole domain. 
+		b) Integrated crystal fraction over the top boundary, in red, and the bottom boundary, in blue}
+	\label{fig:integrated_vf_c}
 \end{figure}
