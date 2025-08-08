@@ -33,26 +33,43 @@
 \contentsline {subsection}{\numberline {2.2.6}OUR OWN BENCHMARK}{30}{subsection.2.2.6}%
 \contentsline {section}{\numberline {2.3}Thermomechanical modeling}{34}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Magma properties}{34}{subsection.2.3.1}%
-\contentsline {subsubsection}{Temperature}{35}{subsubsection*.21}%
-\contentsline {subsubsection}{Pressure}{35}{subsubsection*.22}%
-\contentsline {subsubsection}{Volatiles}{36}{subsubsection*.23}%
-\contentsline {subsubsection}{Crystallinity}{37}{subsubsection*.25}%
-\contentsline {subsubsection}{Density}{39}{subsubsection*.27}%
-\contentsline {subsubsection}{Heat capacity}{40}{subsubsection*.28}%
-\contentsline {subsubsection}{Thermal conductivity}{43}{subsubsection*.30}%
-\contentsline {subsubsection}{Viscosity}{45}{subsubsection*.32}%
-\contentsline {subsubsection}{Latent heat}{50}{subsubsection*.35}%
-\contentsline {section}{\numberline {2.4}Simulation setup}{51}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Simulation domain}{52}{subsection.2.4.1}%
-\contentsline {subsubsection}{Magma domain}{52}{subsubsection*.36}%
-\contentsline {subsubsection}{Rock domain}{53}{subsubsection*.38}%
-\contentsline {chapter}{\numberline {3}Results}{55}{chapter.3}%
-\contentsline {subsubsection}{Chapter overview}{55}{subsubsection*.40}%
-\contentsline {section}{\numberline {3.1}Typology of the results}{56}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Base simulation results}{57}{section.3.2}%
-\contentsline {subsubsection}{Temperature}{57}{subsubsection*.41}%
-\contentsline {subsubsection}{Velocity}{58}{subsubsection*.44}%
-\contentsline {subsubsection}{Pressure}{58}{subsubsection*.47}%
-\contentsline {subsection}{\numberline {3.2.1}Secondary variables}{62}{subsection.3.2.1}%
-\contentsline {subsubsection}{Phase fractions}{62}{subsubsection*.50}%
-\contentsline {chapter}{Bibliography}{67}{section*.53}%
+\contentsline {subsubsection}{Velocity}{35}{subsubsection*.21}%
+\contentsline {subsubsection}{Temperature}{35}{subsubsection*.22}%
+\contentsline {subsubsection}{Pressure}{36}{subsubsection*.23}%
+\contentsline {subsubsection}{Volatiles}{37}{subsubsection*.24}%
+\contentsline {subsubsection}{Crystallinity}{38}{subsubsection*.26}%
+\contentsline {subsubsection}{Density}{40}{subsubsection*.28}%
+\contentsline {subsubsection}{Heat capacity}{41}{subsubsection*.29}%
+\contentsline {subsubsection}{Thermal conductivity}{44}{subsubsection*.31}%
+\contentsline {subsubsection}{Viscosity}{46}{subsubsection*.33}%
+\contentsline {subsubsection}{Latent heat}{51}{subsubsection*.36}%
+\contentsline {section}{\numberline {2.4}Simulation setup}{52}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Simulation domain}{53}{subsection.2.4.1}%
+\contentsline {subsubsection}{Magma domain}{53}{subsubsection*.37}%
+\contentsline {subsubsection}{Rock domain}{54}{subsubsection*.39}%
+\contentsline {chapter}{\numberline {3}Results}{57}{chapter.3}%
+\contentsline {subsubsection}{Chapter overview}{57}{subsubsection*.41}%
+\contentsline {section}{\numberline {3.1}Typology of the results}{58}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Base simulation results}{59}{section.3.2}%
+\contentsline {subsubsection}{Temperature}{59}{subsubsection*.42}%
+\contentsline {subsubsection}{Velocity}{60}{subsubsection*.45}%
+\contentsline {subsubsection}{Pressure}{60}{subsubsection*.48}%
+\contentsline {subsection}{\numberline {3.2.1}Secondary variables}{64}{subsection.3.2.1}%
+\contentsline {subsubsection}{Phase fractions}{66}{subsubsection*.51}%
+\contentsline {subsubsection}{Density}{67}{subsubsection*.55}%
+\contentsline {subsubsection}{Thermal properties}{70}{subsubsection*.57}%
+\contentsline {subsubsection}{Viscosity}{70}{subsubsection*.59}%
+\contentsline {section}{\numberline {3.3}Effect of size, pressure and volatile content}{70}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Effect of size}{74}{subsection.3.3.1}%
+\contentsline {subsubsection}{On the temperature}{74}{subsubsection*.61}%
+\contentsline {subsubsection}{On the velocity}{75}{subsubsection*.63}%
+\contentsline {subsubsection}{On the pressure}{77}{subsubsection*.65}%
+\contentsline {subsubsection}{On the secondary properties}{77}{subsubsection*.68}%
+\contentsline {subsection}{\numberline {3.3.2}Effect of pressure}{77}{subsection.3.3.2}%
+\contentsline {subsubsection}{On the temperature}{77}{subsubsection*.69}%
+\contentsline {subsubsection}{On the velocity}{78}{subsubsection*.71}%
+\contentsline {subsubsection}{On the pressure}{80}{subsubsection*.73}%
+\contentsline {subsubsection}{On the secondary properties}{80}{subsubsection*.75}%
+\contentsline {subsection}{\numberline {3.3.3}Effect of volatiles}{80}{subsection.3.3.3}%
+\contentsline {subsubsection}{On temperature}{80}{subsubsection*.77}%
+\contentsline {chapter}{Bibliography}{87}{section*.81}%

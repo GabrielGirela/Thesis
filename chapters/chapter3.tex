@@ -85,7 +85,9 @@ As time progresses, convection slows down and evolves into less organized and de
 
 
 \subsubsection{Pressure}
-Initial pressure, as mentioned in the simulation setup section, is set to 45 MPa at the rooftop of the body for the \textit{base} simulation. A magmastatic pressure profile, accounting for the depth and density of the overlying magma at any point, rising the pressure up to ~52 MPa at the bottom of the magma chamber as can be seen in \ref{fig:pressure}a. Trough the simulation, pressure changes are smoother, relative to other quantities such as temperature and velocity. In \ref{fig:pressure}b and c the change in pressure, namely \textit{dp}, representing the difference in pressure between the current (\textit{t}) and the previous time step \textit{t-1} is plotted. After an initial drop of 500 Pa during the first 50 years, the global pressure rises around 2200 Pa with an apparent logarithmic trend after 500 years.  The change in pressure distribution, however, is clearly dominated by two distinct regions. On the rooftop of the chamber pressure decreases, creating and under pressure anomaly trough the total of the simulated time. Similarly, the bottom of the chamber is characterized by over pressure. At the early stages, however, this overpressure stratification is not so clear, and more features are visible. Figure \ref{fig:dp_early} shows the evolution of the pressure at 0.5, 0.7, 1 and 2 years. At the very beginning of the simulation, the previously mentioned stratification is shifted, with an over-pressurized area at the top, and a under-pressurized zone at the bottom. However, in both boundaries some points show a different behavior: there are areas at the bottom of the chamber that push upwards, thus increasing the local pressure, and the other way around, some areas sink, which translates into local pressure decreases. This is particularly easy to see in the 0.7 years snapshot. Continuing with the temporal evolution, after 1 year the shifting into the soon to be normal stratification (over-pressure at the bottom and under-pressure at the top) becomes more evident, which culminates after 2 years, where this final stage is reached. This interesting and surprising process will be further discussed in the following chapter.
+Initial pressure, as mentioned in the simulation setup section, is set to 45 MPa at the rooftop of the body for the \textit{base} simulation. A magmastatic pressure profile, accounting for the depth and density of the overlying magma at any point, rising the pressure up to ~52 MPa at the bottom of the magma chamber as can be seen in \ref{fig:pressure}a. Trough the simulation, pressure changes are smoother, relative to other quantities such as temperature and velocity. In \ref{fig:pressure}b and c the change in pressure, namely \textit{dp}, representing the difference in pressure between the current (\textit{t}) and the previous time step \textit{t-1} is plotted. After an initial drop of 500 Pa during the first 50 years, the global pressure rises around 2200 Pa with an apparent logarithmic trend after 500 years.  The change in pressure distribution, however, is clearly dominated by two distinct regions. On the rooftop of the chamber pressure decreases, creating and under pressure anomaly trough the total of the simulated time. Similarly, the bottom of the chamber is characterized by over pressure. At the early stages, however, this overpressure stratification is not so clear, and more features are visible. Figure \ref{fig:dp_early} shows the evolution of the pressure at 0.5, 0.7, 1 and 2 years. At the very beginning of the simulation, the previously mentioned stratification is shifted, with an over-pressurized area at the top, and a under-pressurized zone at the bottom.
+
+However, in both boundaries some points show a different behavior: there are areas at the bottom of the chamber that push upwards, thus increasing the local pressure, and the other way around, some areas sink, which translates into local pressure decreases. This is particularly easy to see in the 0.7 years snapshot. Continuing with the temporal evolution, after 1 year the shifting into the soon to be normal stratification (over-pressure at the bottom and under-pressure at the top) becomes more evident, which culminates after 2 years, where this final stage is reached. This interesting and surprising process will be further discussed in the following chapter.
 \begin{figure}
 	\centering
 	\begin{tikzpicture}
@@ -114,11 +116,13 @@ Initial pressure, as mentioned in the simulation setup section, is set to 45 MPa
 
 \subsection{Secondary variables}
 Following the analysis of the three primary variables, the secondary variables or properties are presented. These are the magma properties, which define the physical parameters of the magma, and are necessary to solve the transport equations in a realistic and physical way. They give physical meaning to the solution. These properties are crystal, gas and melt fractions, density, heat capacity, thermal conductivity and viscosity.
+
 The behavior of the properties is similar in all cases, since they are in all cases computed as de weighted average of all the phases present in the magma.
 
 \subsubsection{Phase fractions}
 Figure \ref{fig:vf_c_g} shows different snapshots of the simulation at different times. On the left column the volume fraction of gas is shown, while on the right column it is the volume fraction of crystals. Crystals start to form at the boundaries, where the heat is being lost, although, as it can be seen, there is no crystallization front developing. Some batches can be seen further in time, but they are not permanent and never develop further than some meters from the boundary. The exsolved volatiles phase behaves similarly, although there is a clear distribution of the gas, with higher content on the top of the body with respect to the bottom.
-Figure \ref{fig:integrated_vf_c}, on the other hand, shows the integrate crystal volume fraction profiles for the entire domain (\ref{fig:integrated_vf_c} a, green line), the top boundary (\ref{fig:integrated_vf_c} b, red line) and the bottom boundary (\ref{fig:integrated_vf_c} b, blue line). The total crystallinity of the system follows a positive trend, with the total amount of crystal fraction increasing with time, as the overall temperature of the system decreases. However, the crystal fraction at the boundaries behaves opposite to this: the total amount of crystals decreases with time. This is an interesting result, as it opposes the expected behavior of a cooling magmatic chamber, and will be further explained in the next chapter.
+
+Figure \ref{fig:integrated_vf_c}, on the other hand, shows the integrate crystal volume fraction profiles for the entire domain (\ref{fig:integrated_vf_c} a, green line), the top boundary (\ref{fig:integrated_vf_c} b, red line) and the bottom boundary (\ref{fig:integrated_vf_c} b, blue line). The total crystallinity of the system follows a positive trend, with the total amount of crystal fraction increasing with time, as the overall temperature of the system decreases. However, the crystal fraction at the boundaries behaves opposite to this: the total amount of crystals decreases with time. Similarly, the same process occurs with the exsolved volatiles, as it can be appreciated in \ref{fig:integrated_vf_g}. This is an interesting result, as it opposes the expected behavior of a cooling magmatic chamber, and will be further explained in the next chapter.
 \begin{figure}
 	\centering
 	\includegraphics[width=1\linewidth]{img/chapter3/secondary_props/vf_c_g.png}
@@ -139,4 +143,212 @@ Figure \ref{fig:integrated_vf_c}, on the other hand, shows the integrate crystal
 	\caption{a) Integrated crystal fraction over the whole domain. 
 		b) Integrated crystal fraction over the top boundary, in red, and the bottom boundary, in blue}
 	\label{fig:integrated_vf_c}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\begin{tikzpicture}
+		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/secondary_props/integrated_vf_g_domain.png}};
+		\node[anchor=north east, xshift=-8pt, yshift=-40pt] at (img1.north east) {\textbf{(a)}};
+	\end{tikzpicture}
+	\begin{tikzpicture}
+		\node[inner sep=0pt] (img2) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/secondary_props/integrated_vf_g_boundaries.png}};
+		\node[anchor=north east, xshift=-8pt, yshift=-30pt] at (img2.north east) {\textbf{(b)}};
+	\end{tikzpicture}
+	\caption{a) Integrated crystal fraction over the whole domain. 
+		b) Integrated crystal fraction over the top boundary, in red, and the bottom boundary, in blue}
+	\label{fig:integrated_vf_g}
+\end{figure}
+
+\subsubsection{Density}
+Density is very sensitive to crystallization and, especially, gas exsolution. The exsolved volatiles strongly influence de total density of the system, which can easily be appreciated in figure \ref{fig:rho}a where the lowest density tends to be at the top of the magma chamber. Figure \ref{fig:rho}b and c show the integrated density over the whole domain and over the top and bottom boundaries similar as in the previous section. It can be appreciated that density rises quickly as temperature drops following the expected behavior of magmas, and reaching the quasi-stalled point as crystallization cycles start to occur. The boundaries show an initial rise in the averaged density, followed by a drop and the beginning of the crystallization cycles, with a positive trend as temperature decreases.
+
+\begin{figure}
+	\centering
+	\begin{tikzpicture}
+		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/secondary_props/rho_figure.png}};
+		\node[anchor=north east, xshift=-8pt, yshift=-3pt] at (img1.north east) {\textbf{(a)}};
+	\end{tikzpicture}
+	\begin{tikzpicture}
+		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/secondary_props/integrated_rho_domain.png}};
+		\node[anchor=north east, xshift=-8pt, yshift=-40pt] at (img1.north east) {\textbf{(b)}};
+	\end{tikzpicture}
+	\begin{tikzpicture}
+		\node[inner sep=0pt] (img2) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/secondary_props/integrated_rho_boundaries.png}};
+		\node[anchor=north east, xshift=-8pt, yshift=-30pt] at (img2.north east) {\textbf{(c)}};
+	\end{tikzpicture}
+	\caption{a) Integrated crystal fraction over the whole domain. 
+		b) Integrated crystal fraction over the top boundary, in red, and the bottom boundary, in blue}
+	\label{fig:rho}
+\end{figure}
+
+\subsubsection{Thermal properties}
+Similarly as the rest of the properties, the evolution of the specific heat capacity and thermal conductivity follow the crystallization and exsolution paths. The range of values is reduced in comparison to the previously presented results, since the variability of these properties is minor at the simulated temperatures, as it has been shown in figures \ref{fig:heat_capacity} and \ref{fig:kappa}. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{img/chapter3/secondary_props/cp_kappa.png}
+	\caption{Snapshots of density}
+	\label{fig:cp_kappa}
+\end{figure}
+
+\subsubsection{Viscosity}
+Viscosity, as mentioned in the previous chapter, ranges immensely, and small variations in temperature or crystal and gas content have a strong influence in the total viscosity of the system. As it can be seen in figure \ref{fig:mu}, as soon as some crystals appear and the system cools down, the viscosity can rise orders of magnitude. This happens with special intensity at the boundaries, as they constitute the cooling surfaces, hence the areas with maximum crystallization. Here, the viscosity can reach values around 3·10$^7$ Pa·s when the integrated crystallinity within the boundaries is 18\%. The background viscosity, however, or the viscosity of the molten phase has a value in the order of 5.6·10$^6$ Pa·s, steady increasing with the decrease in temperature, following the same temperature dependence as for the rest of the properties. 
+
+\begin{figure}
+	\centering
+	\begin{tikzpicture}
+		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/secondary_props/mu_time.png}};
+		\node[anchor=north east, xshift=-8pt, yshift=-3pt] at (img1.north east) {\textbf{(a)}};
+	\end{tikzpicture}
+	\begin{tikzpicture}
+		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/secondary_props/integrated_mu_domain.png}};
+		\node[anchor=north east, xshift=-8pt, yshift=-40pt] at (img1.north east) {\textbf{(b)}};
+	\end{tikzpicture}
+	\begin{tikzpicture}
+		\node[inner sep=0pt] (img2) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/secondary_props/integrated_mu_boundaries.png}};
+		\node[anchor=north east, xshift=-8pt, yshift=-30pt] at (img2.north east) {\textbf{(c)}};
+	\end{tikzpicture}
+	\caption{a) Integrated crystal fraction over the whole domain. 
+		b) Integrated crystal fraction over the top boundary, in red, and the bottom boundary, in blue}
+	\label{fig:mu}
+\end{figure}
+
+\section{Effect of size, pressure and volatile content}
+In the present section, the rest of the simulations are simultaneously presented in order to study the effect of changing fundamental parameters such as the size of the magma chamber, the initial pressure, and the total volatiles content of the mixture, following the established set-up in Chapter 2. This will help constrain time scales of cooling and possible magma chamber sizes to resemble the findings at IDDP-1.
+
+First, the three analyzed sizes are presented, followed by the 50 MPa simulation and lastly, the volatile variations. 
+
+\subsection{Effect of size}
+\subsubsection{On the temperature}
+Figure \ref{fig:3_size_T} shows the integrated temperature time series for the three simulated sizes: \textit{small}, in blue color, \textit{medium} in green and \textit{large} in red. The curves follow similar trends, although with some important differences. The first, is the slope of the initial cooling. Surprisingly, during first ~15 years of simulated time, the body that undergoes a faster cooling is the \textit{large} one, as opposed to the common belief, which would have the \textit{small} body to present a faster cooling than the larger volumes. It also cools faster, and reach the quasi-stalled cooling behavior at an earlier time than the \textit{medium} body. The critical point that marks the onset of the crystallization cycles, although it is not a clear change in the trend for the two larger bodies, can be set at 20 years for the \textit{small} body, 57 years for the \textit{medium}, and 50 years for the \textit{large} body. It is also evident that the sharpness of the cooling and heating cycles varies significantly among the three different sizes. It increases dramatically with the decrease in size, with the \textit{small} body presenting a much more serrated and sharp behavior than the other two, followed by the \textit{medium}, with an intermediate sharpness, and finally the \textit{large} body with a much more smoothed cooling, although the cooling-heating cycles are, of course, still present. 
+
+However the characteristics of the cooling process are for each of the simulated bodies, it appears evident the convergence of the three curves after around 60 years at a temperature of ~830°C, and the jointed, prolonged thermal evolution, despite slight differences in the slope of each trend at temperatures between 830°C and 825°C. 
+%Surprisingly, the fastest body to reach the quasi stall cooling behavior is the \textit{large} one, followed by the \textit{small} and at last, the \textit{medium}, as opposed to the common belief, which would have the \textit{small} body to undergo a faster cooling than the larger sizes.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{img/chapter3/three_sizes/sizes_comparation.png}
+	\caption{Snapshots of density}
+	\label{fig:3_size_T}
+\end{figure}
+
+\subsubsection{On the velocity}
+As it was mentioned in the previous chapter, velocity can change noticeably depending on the size of the body, and more specifically, depending on the thickness, which allows and controls how vigorous the convection is. How the velocity changes among the different simulated chambers can be easily seen in figure \ref{fig:3_size_v}. The top three plots represent the averaged velocity over a number of randomly selected points in the center of each of the three magma chambers. Notice that the dashed line represent the maximum value of velocity for each time step within the randomly selected points, while the solid line represents the averaged velocity. It can be appreciated how the larger the magmatic body is, the higher the velocity. The \textit{small} body, reaches a maximum velocity of the order of 1·10$^{-3}$, which drops to an averaged velocity of the order of 2·10$^{-5}$ for the rest of the simulated time. The velocity for the \textit{medium} body is slightly higher, although the same order of magnitude, with a maximum velocity of 5·10$^{-3}$, and an average velocity with values between 2·10$^{-5}$ and 5·10$^{-5}$. The \textit{larger} body, however, reaches velocities which are one order of magnitude higher than those of the other simulations. The maximum reached velocity or this simulation is 3·10$^{-2}$, which drops to values between 1·10$^{-4}$ and 5·10$^{-5}$. The plot situated at the bottom of figure \ref{fig:3_size_v} portrays the integrated velocity over the whole magma domain for the three simulations. It confirms what was previously stated, with the \textit{large} (red line) body developing a more vigorous convection than the other two simulations. 
+The peak velocity, in all three cases, occurs at the early stages of the simulations within the first 5 to 10 years.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{img/chapter3/three_sizes/velocities.png}
+	\caption{Snapshots of density}
+	\label{fig:3_size_v}
+\end{figure}
+
+\subsubsection{On the pressure}
+Initial pressure of the three bodies is portrayed in figure \ref{fig:3_size_inital_p}. Initial pressure at the top of the magma bodies is 45 MPa for the three sizes, while the pressure down to the bottom is computed as a vertical magmastatic profile. This translates in higher pressures at the bottom of the larger sizes, while the \textit{small} just increases the pressure at the bottom by 3 MPa.
+
+Figure \ref{fig:3_size_dp} shows the three chamber's integrated difference in pressure plots. The differences are large, with the \textit{small} chamber suffering a minimal, almost negligible under-pressurization at the beginning, followed by a fast over-pressurization, which reaches values of ~3000 Pa. The \textit{medium} body, as it has already been said, undergoes an initial, larger with respect to the smaller body decrease in pressure that is then followed by a less steep increase in pressure. The \textit{large} body suffers a fast, immediate under-pressurization of almost -1400 Pa, which is followed, similarly as to rest of the simulations, by an increase in pressure, steeper than the \textit{medium}, with a similar slope as to that of the \textit{small} chamber.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.75\linewidth]{img/chapter3/three_sizes/3_sizes_ic.png}
+	\caption{Snapshots of density}
+	\label{fig:3_size_initla_p}
+\end{figure}
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{img/chapter3/three_sizes/integrated_dp.png}
+	\caption{Snapshots of density}
+	\label{fig:3_size_dp}
+\end{figure}
+
+\subsubsection{On the secondary properties}
+
+\subsection{Effect of pressure}
+\subsubsection{On the temperature}
+In this section, the results for the simulation at 50 MPa are presented. Figure \ref{fig:45_50_temperature} shows the integrated temperature time series for the 45 MPa initial pressure \textit{medium} body and for the 50 MPa initial pressure, also for the \textit{medium} body. Both temperatures curves follow practically the exact same cooling trend, given that the initial composition is the same for every simulation, but it becomes immediately obvious that the onset of crystallization and the latent heat driven stepped cooling trend starts at a lower temperature in the case of the higher pressure simulation. The temperature offset between the 45 MPa and the 50 MPa simulations once the cyclic behavior is reached is of 5°C approximately. It also appears that the general slope is slight steeper in the 50 MPa case.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{img/chapter3/three_sizes/integrated_T_45_50.png}
+	\caption{Snapshots of density}
+	\label{fig:45_50_temperature}
+\end{figure}
+
+\subsubsection{On the velocity}
+Regarding the velocity and the effect of pressure, there are no significant changes with respect to the 45MPa simulation. Figure \ref{fig:45_50_velocity}a shows the averaged (solid line) and maximum velocity (dashed line), while figure \ref{fig:45_50_velocity}b shows the integrated temperature over the whole domain for both simulations. The maximum reached velocity is 3.9·10$^{-3}$, as opposed to the maximum velocity of the 45 MPa simulations, which was 5·10$^{-3}$. The velocity once the cyclic behavior starts is slightly lower to that of the 45 MPa, with values between 1·10$^{-5}$ and  2·10$^{-5}$. This lower velocity can be easily appreciated in the integrated velocity plot, where the brown curve, corresponding to the 50 MPa oscillates generally within lower values thant the green line, corresponding to the 45 MPa.
+
+\begin{figure}
+	\centering
+	\begin{tikzpicture}
+		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/three_sizes/v_50_log.png}};
+		\node[anchor=north east, xshift=-8pt, yshift=-10pt] at (img1.north east) {\textbf{(a)}};
+	\end{tikzpicture}
+	\begin{tikzpicture}
+		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/three_sizes/velocity_45_50.png}};
+		\node[anchor=north east, xshift=-8pt, yshift=-40pt] at (img1.north east) {\textbf{(b)}};
+	\end{tikzpicture}
+	\caption{a) Integrated crystal fraction over the whole domain. 
+		b) Integrated crystal fraction over the top boundary, in red, and the bottom boundary, in blue}
+	\label{fig:45_50_velocity}
+\end{figure}
+
+\subsubsection{On the pressure}
+The initial pressure distribution is portrayed in figure \ref{fig:45_50_pressure}a for both the 45 and the 50 MPa simulations for better comparison. Figure \ref{fig:45_50_pressure}b shows the integrated change in pressure for both simulations. The main feature that can be extracted from this plot is that the higher pressure body undergoes smaller pressure changes during the simulation, as the initial decrease in pressure is halved with respect to the 45 MPa simulation, and the slope of the trend is smaller. 
+
+\begin{figure}
+	\centering
+	\begin{tikzpicture}
+		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/three_sizes/45_50.png}};
+		\node[anchor=north east, xshift=-8pt, yshift=-3pt] at (img1.north east) {\textbf{(a)}};
+	\end{tikzpicture}
+	\begin{tikzpicture}
+		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/three_sizes/45_50_dp.png}};
+		\node[anchor=north east, xshift=-8pt, yshift=-40pt] at (img1.north east) {\textbf{(b)}};
+	\end{tikzpicture}
+	\caption{a) Integrated crystal fraction over the whole domain. 
+		b) Integrated crystal fraction over the top boundary, in red, and the bottom boundary, in blue}
+	\label{fig:45_50_pressure}
+\end{figure}
+
+\subsubsection{On the secondary properties}
+\begin{figure}
+	\centering
+	\begin{tikzpicture}
+		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/three_sizes/rho_45_50.png}};
+		\node[anchor=north east, xshift=-8pt, yshift=-3pt] at (img1.north east) {\textbf{(a)}};
+	\end{tikzpicture}
+	\begin{tikzpicture}
+		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/three_sizes/integrated_vf_c_45_50.png}};
+		\node[anchor=north east, xshift=-8pt, yshift=-40pt] at (img1.north east) {\textbf{(b)}};
+	\end{tikzpicture}
+	\caption{a) Integrated crystal fraction over the whole domain. 
+		b) Integrated crystal fraction over the top boundary, in red, and the bottom boundary, in blue}
+	\label{fig:45_50_rho_vfc}
+\end{figure}
+
+
+\subsection{Effect of volatiles}
+\subsubsection{On temperature}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{img/chapter3/three_sizes/integrated_T_gas.png}
+	\caption{Snapshots of density}
+	\label{fig:gas_temperature}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{img/chapter3/three_sizes/veolocities_gas.png}
+	\caption{Snapshots of density}
+	\label{fig:gas_velocities}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{img/chapter3/three_sizes/integrated_dp_gas.png}
+	\caption{Snapshots of density}
+	\label{fig:gas_dp}
 \end{figure}

@@ -322,7 +322,18 @@ Physical properties are fundamental in the understanding of the behavior and evo
 
 Thus, their importance is of the utmost essence, and need to be properly and realistically modeled in order to maximize the resemblance between the simulated results and reality.  As most of the properties are well constrained by diverse models and natural observations, they serve as the link between the computational domain and the natural world. 
 
-In our simulations, the magmatic properties are computed as a bulk quantities, meaning that the three coexisting phases contribute to the total value of a said property proportionally to its abundance within the magmatic system.
+In our simulations, the magmatic properties are computed as a bulk quantities, meaning that the three coexisting phases contribute to the total value of a said property proportionally to its abundance within the magmatic system. Thus, each bulk property is computed as the weighted average of each phase's said property:
+
+\begin{equation}
+	\psi = \sum_i w_i\psi_i
+\end{equation}
+
+where $\psi$ is the property, $\psi_i$ and $w_i$ the said property and the mass fraction of the $i$th phase. Similarly, within each phase, properties are computed as the weighted average of its components.
+
+\subsubsection{Velocity}
+Velocity within magma chambers reflects the movement of the magma mixture and is a key indicator of the chamber’s dynamic state. It influences how heat, crystals, and volatiles are redistributed, and has a direct impact in processes like convection, crystallization, melt segregation, and volatile exsolution. In actively convecting chambers, higher velocities promote efficient thermal mixing, delaying cooling and solidification, and fostering more homogeneous magma compositions. Conversely, low or stagnant velocities may lead to stratification and the formation of stable crystal mushes or chemically zoned reservoirs.
+Thicker chambers lead to higher Rayleigh numbers, which enhance buoyancy-driven convection. This increases vertical velocities, intensifies thermal gradients, and promotes efficient mixing. Thinner chambers, in contrast, and thanks to a reduced vertical extent, may exhibit sluggish convection or even purely conductive heat transfer, especially in more viscous magmas. Another important factor is the aspect ratio (height/width), which determines whether the flow is dominated by large-scale overturns, multi-cell convection, or stable stratification. %references
+
 \subsubsection{Temperature}
 Temperature constitutes one of the, if not the most important variables controlling magma generation, evolution and overall behavior. It determines whether rocks remain solid, partially or fully molten, and it directly influences fundamental properties such as viscosity, density and crystallinity. Higher temperatures promote low viscosity magmas, magmas capable of flowing and convecting. Cooling drives crystallization, increases viscosity, and eventually leads to solidification. Temperature also controls phase equilibria, determining which minerals crystallize at different stages and influencing the chemical differentiation of magma. Additionally, it affects the solubility of volatiles, the rate of diffusion and the kinetics of chemical reactions. In magma chambers, spatial and temporal variations in temperature can create thermal gradients that drive convection, melt segregation, and even reactivation of previously solidified zones. Overall, temperature is not only a measure of thermal energy but a key control on the dynamics, structure, and eruptive behavior of magmatic systems.
 
