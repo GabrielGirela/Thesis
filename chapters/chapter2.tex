@@ -580,6 +580,21 @@ Lastly, for the \textit{large} body, the dimensions are $2672x534$ meters, which
 
 The initial temperature of the magma is set to be 900°C in all simulations, which is a consistent value with the thermometry data from \cite{elders2011} and \cite{zierenberg2013}. Initial pressure is 45 MPa for all simulations at the rooftop of the magma chamber. Pressure and volatiles content are constrained by analyzing the dissolved volatile content found in the glass cuttings (1.77 wt\% of $H_2O$ and 85 ppm $CO_2$ according to \cite{elders2014}). Any pair of dissolved $H_2O$ and $CO_2$ provides only one entrapment pressure and composition of the gas phase for any given redox conditions, which means that, knowing the dissolved quantities and the redox conditions, the gas composition and entrapment pressure can be calculated utilizing SOLWCAD. This is better shown in figure XX, where we can see that for the dissolved volatiles content, the computations throw an entrapment pressure of 45.4 MPa for which the amount of $CO_2$ in the gas phase should be 58.9 wt\%. However, this computations deliver the pressure and the gas phase composition, but there are infinite pairs of total (dissolved and exsolved) volatiles for the set redox conditions which lay in a straight line (as in figure XX). The minimum volatiles content is the one found in the glass cuttings, that would mean there are no exsolved volatiles. However, in order to be as consistent as possible with the general reality, the base total volatiles content in the base simulations is set to be 2 wt\% of $H_2O$ and 0.352 wt\% of $CO_2$. This pair means that the exsolved volatiles phase should be around 9.5\% volume for the calculated pressure. 
 
+\begin{figure}
+	\centering
+	\begin{tikzpicture}
+		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter2/sim_setup/volatiles_1.png}};
+		\node[anchor=north east, xshift=-8pt, yshift=-3pt] at (img1.north east) {\textbf{(a)}};
+	\end{tikzpicture}
+	\begin{tikzpicture}
+		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter2/sim_setup/volatiles_2.png}};
+		\node[anchor=north east, xshift=-8pt, yshift=-40pt] at (img1.north east) {\textbf{(b)}};
+	\end{tikzpicture}
+	\caption{a) Integrated crystal fraction over the whole domain. 
+		b) Integrated crystal fraction over the top boundary, in red, and the bottom boundary, in blue}
+	\label{fig:volatiles_plots}
+\end{figure}
+
 Initial velocity inside the domain is 0 m/s. No slip conditions are applied to the boundary. Boundary temperature is not computed in the magma domain, but instead is passed as a Dirichlet boundary condition from the solution of the host rock temperature.
 
 

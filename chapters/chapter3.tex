@@ -245,7 +245,7 @@ The peak velocity, in all three cases, occurs at the early stages of the simulat
 \end{figure}
 
 \subsubsection{On the pressure}
-Initial pressure of the three bodies is portrayed in figure \ref{fig:3_size_inital_p}. Initial pressure at the top of the magma bodies is 45 MPa for the three sizes, while the pressure down to the bottom is computed as a vertical magmastatic profile. This translates in higher pressures at the bottom of the larger sizes, while the \textit{small} just increases the pressure at the bottom by 3 MPa.
+Initial pressure of the three bodies is portrayed in figure \ref{fig:3_size_initial_p}. Initial pressure at the top of the magma bodies is 45 MPa for the three sizes, while the pressure down to the bottom is computed as a vertical magmastatic profile. This translates in higher pressures at the bottom of the larger sizes, while the \textit{small} just increases the pressure at the bottom by 3 MPa.
 
 Figure \ref{fig:3_size_dp} shows the three chamber's integrated difference in pressure plots. The differences are large, with the \textit{small} chamber suffering a minimal, almost negligible under-pressurization at the beginning, followed by a fast over-pressurization, which reaches values of ~3000 Pa. The \textit{medium} body, as it has already been said, undergoes an initial, larger with respect to the smaller body decrease in pressure that is then followed by a less steep increase in pressure. The \textit{large} body suffers a fast, immediate under-pressurization of almost -1400 Pa, which is followed, similarly as to rest of the simulations, by an increase in pressure, steeper than the \textit{medium}, with a similar slope as to that of the \textit{small} chamber.
 
@@ -253,7 +253,7 @@ Figure \ref{fig:3_size_dp} shows the three chamber's integrated difference in pr
 	\centering
 	\includegraphics[width=0.75\linewidth]{img/chapter3/three_sizes/3_sizes_ic.png}
 	\caption{Snapshots of density}
-	\label{fig:3_size_initla_p}
+	\label{fig:3_size_initial_p}
 \end{figure}
 
 
@@ -265,10 +265,32 @@ Figure \ref{fig:3_size_dp} shows the three chamber's integrated difference in pr
 \end{figure}
 
 \subsubsection{On the secondary properties}
+Figure \ref{fig:rho_vfc_mu_sizes} shows the compared integrated values of two of the secondary properties of interest for the \textit{small}, \textit{medium} and \textit{large} simulations, which are the density (\ref{fig:rho_vfc_mu_sizes}a), volume fraction of crystals (\ref{fig:rho_vfc_mu_sizes}b) and viscosity (\ref{fig:rho_vfc_mu_sizes}c). 
+
+\begin{figure}
+	\centering
+	\begin{tikzpicture}
+		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=0.8\linewidth]{img/chapter3/three_sizes/integrated_rho_size.png}};
+		\node[anchor=north east, xshift=-8pt, yshift=-3pt] at (img1.north east) {\textbf{(a)}};
+	\end{tikzpicture}
+	\begin{tikzpicture}
+		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=0.8\linewidth]{img/chapter3/three_sizes/integrated_vfc_size.png}};
+		\node[anchor=north east, xshift=-8pt, yshift=-40pt] at (img1.north east) {\textbf{(b)}};
+	\end{tikzpicture}
+	\begin{tikzpicture}
+		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=0.8\linewidth]{img/chapter3/three_sizes/integrated_mu_gas.png}};
+		\node[anchor=north east, xshift=-8pt, yshift=-40pt] at (img1.north east) {\textbf{(b)}};
+	\end{tikzpicture}
+	\caption{a) Integrated crystal fraction over the whole domain. 
+		b) Integrated crystal fraction over the top boundary, in red, and the bottom boundary, in blue}
+	\label{fig:rho_vfc_mu_sizes}
+\end{figure}
+
 
 \subsection{Effect of pressure}
+In this section, the results for the simulation at 50 MPa are presented and shown in comparison with the simulation with 45 MPa as intial pressure at the rooftop of the magma chamber.
 \subsubsection{On the temperature}
-In this section, the results for the simulation at 50 MPa are presented. Figure \ref{fig:45_50_temperature} shows the integrated temperature time series for the 45 MPa initial pressure \textit{medium} body and for the 50 MPa initial pressure, also for the \textit{medium} body. Both temperatures curves follow practically the exact same cooling trend, given that the initial composition is the same for every simulation, but it becomes immediately obvious that the onset of crystallization and the latent heat driven stepped cooling trend starts at a lower temperature in the case of the higher pressure simulation. The temperature offset between the 45 MPa and the 50 MPa simulations once the cyclic behavior is reached is of 5°C approximately. It also appears that the general slope is slight steeper in the 50 MPa case.
+Figure \ref{fig:45_50_temperature} shows the integrated temperature time series for the 45 MPa initial pressure \textit{medium} body and for the 50 MPa initial pressure, also for the \textit{medium} body. Both temperatures curves follow practically the exact same cooling trend, given that the initial composition is the same for every simulation, but it becomes immediately obvious that the onset of crystallization and the latent heat driven stepped cooling trend starts at a lower temperature in the case of the higher pressure simulation. The temperature offset between the 45 MPa and the 50 MPa simulations once the cyclic behavior is reached is of 5°C approximately. It also appears that the general slope is slight steeper in the 50 MPa case.
 
 \begin{figure}
 	\centering
@@ -314,14 +336,21 @@ The initial pressure distribution is portrayed in figure \ref{fig:45_50_pressure
 \end{figure}
 
 \subsubsection{On the secondary properties}
+Figure \ref{fig:45_50_rho_vfc} shows the integrated values of density (\ref{fig:45_50_rho_vfc}a), volume fraction of crystals (\ref{fig:45_50_rho_vfc}b) and viscosity (\ref{fig:45_50_rho_vfc}c) as a comparison for the 45 MPa and the 50 MPa simulations. There are two immediate appreciable phenomena occurring: in the density plot, there is a consistent density difference of approximately 30 kg/m$^3$ between both curves, with the higher pressure simulation being the denser. The other feature that can be seen is a, also consistent, higher crystallinity of the lower pressure simulation, which is, also, the least dense. Some change can be also appreciate in the viscosity evolution: when the system is evolving during the first 50 years the viscosity of the 50 MPa simulation is lower than the the less pressurized simulation. However, after approximately 50 years, coinciding with the onset of the extensive crystallization, the trend is inverted, and the vicosity of the higher pressure body is also higher. 
+
+
 \begin{figure}
 	\centering
 	\begin{tikzpicture}
-		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/three_sizes/rho_45_50.png}};
+		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=0.8\linewidth]{img/chapter3/three_sizes/rho_45_50.png}};
 		\node[anchor=north east, xshift=-8pt, yshift=-3pt] at (img1.north east) {\textbf{(a)}};
 	\end{tikzpicture}
 	\begin{tikzpicture}
-		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/three_sizes/integrated_vf_c_45_50.png}};
+		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=0.8\linewidth]{img/chapter3/three_sizes/integrated_vf_c_45_50.png}};
+		\node[anchor=north east, xshift=-8pt, yshift=-40pt] at (img1.north east) {\textbf{(b)}};
+	\end{tikzpicture}
+	\begin{tikzpicture}
+		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=0.8\linewidth]{img/chapter3/three_sizes/integrated_mu_45_50.png}};
 		\node[anchor=north east, xshift=-8pt, yshift=-40pt] at (img1.north east) {\textbf{(b)}};
 	\end{tikzpicture}
 	\caption{a) Integrated crystal fraction over the whole domain. 
@@ -332,13 +361,15 @@ The initial pressure distribution is portrayed in figure \ref{fig:45_50_pressure
 
 \subsection{Effect of volatiles}
 \subsubsection{On temperature}
+Figure \ref{fig:gas_temperature} shows the integrated temperature over the magma domain for the three simulated contents in volatiles. A lower gas content delays the onset of crystallization, producing an initial cooling curve, with a more gentle slope with respect to the base simulation, or, in other words, the intermediate gas content simulation, and with the quasi-steady cooling behavior occurring at just one or two degrees cooler temperature. Higher gas content, however, shows the opposite behavior, cooling faster at the early stages, and initiating the quasi-steady cooling earlier in time (approximately 20 years earlier) and in temperature (almost 5°C hotter). Both of these phenomena will be explained in more detail in the following chapter.
 \begin{figure}
 	\centering
 	\includegraphics[width=1\linewidth]{img/chapter3/three_sizes/integrated_T_gas.png}
 	\caption{Snapshots of density}
 	\label{fig:gas_temperature}
 \end{figure}
-
+\subsubsection{On the velocity}
+Velocities show similar trends as for the rest of the simulations. Maximum reached velocity in the lower gas content is slightly lower (1.8·10$^{-3}$ m/s, figure \ref{fig:gas_velocities}a, left) than that of the base simulation (5·10$^{-3}$ m/s), but in the same order of magnitude, whereas the high gas content simulation reaches a faster velocity than the other two (1·10$^{-2}$ m/s,figure \ref{fig:gas_velocities}a, right), almost one order of magnitude higher. Figure \ref{fig:gas_velocities}b shows the integrated velocity for the three simulations. It can be seen that at the earlier stages, higher gas content always means faster velocities, and this is true also for the high volatile content simulations, which always shows a more vigorous convection. The medium volatile content and the low volatile content simulations move at similar speeds when the simulated time reaches 55 years.  
 \begin{figure}
 	\centering
 	\includegraphics[width=1\linewidth]{img/chapter3/three_sizes/veolocities_gas.png}
@@ -346,9 +377,34 @@ The initial pressure distribution is portrayed in figure \ref{fig:45_50_pressure
 	\label{fig:gas_velocities}
 \end{figure}
 
+\subsubsection{On the pressure}
+Regarding the pressure, there are some features appreciable in the pressure difference plots (\ref{fig:gas_dp}). The most notorious one is the steeped drop in pressure in the high gas content case, which decreases the averaged pressure by ~1550 Pa. The low gas content case, however, does no present any initial pressure drop as in the rest of the cases, which the exception of the \textit{small} simulation, which behaved similarly. Pressure in this case remains almost constant during the first 50 years of simulated time, after which it starts to increase.
 \begin{figure}
 	\centering
 	\includegraphics[width=1\linewidth]{img/chapter3/three_sizes/integrated_dp_gas.png}
 	\caption{Snapshots of density}
 	\label{fig:gas_dp}
+\end{figure}
+
+\subsubsection{On the secondary properties}
+As with the pressure comparison plots, figure \ref{fig:gas_rho_vfc} displays the density, volume fraction of crystals and viscosity for the three different volatile content simulations. Starting with \ref{fig:gas_rho_vfc}a, it is easily appreciable that gas fraction heavily controls the bulk density of the mixture, with remarkable variations from one gas content to the other: higher gas content simulation has an averaged density ~425 kg/m³ lower than the lower gas content. It is also worth mentioning that the density differences are not proportionally spaced, with the density of the low and medium gas content being closer than the high gas content simulation. Figure \ref{fig:gas_rho_vfc}b portraits the volume fraction of crystals. Some interesting features can be seeing. The crystallinity of the magma evolves accordingly to the content in gas. Higher gas content starts to crystallize earlier, followed by the medium gas content and the low gas content. The increase in crystal fraction of the high volatile content occurs not earlier in time, but also steeper. However, after 50 years, and with a sharper, spikier trend than the other two simulations, the integrated volume fraction of crystals decreases. For the medium gas content, the crystallinity increases and stabilizes, after around 50 years. The low gas content simulation presents lower crystallinity at the earlier stages, but surpasses that of the medium and high gas content, becoming the most crystal rich simulation of the three. Viscosity (figure \ref{fig:gas_rho_vfc}c) shows and increasing viscosity of the three simulation with the higher gas content being the more viscous, followed by the medium and the low gas content, up until 50 years have being simulated. Then, the curves invert completely, with the low gas content being the more viscous. However, there are three obvious peaks in the high gas content curve which show a viscosity several orders of magnitude higher than the normal, background viscosity. The appearance of these three peaks will be explained in the following chapter. 
+
+
+\begin{figure}
+	\centering
+	\begin{tikzpicture}
+		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=0.8\linewidth]{img/chapter3/three_sizes/rho_gas.png}};
+		\node[anchor=north east, xshift=-8pt, yshift=-3pt] at (img1.north east) {\textbf{(a)}};
+	\end{tikzpicture}
+	\begin{tikzpicture}
+		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=0.8\linewidth]{img/chapter3/three_sizes/integrated_vf_c_all_gas.png}};
+		\node[anchor=north east, xshift=-8pt, yshift=-40pt] at (img1.north east) {\textbf{(b)}};
+	\end{tikzpicture}
+	\begin{tikzpicture}
+		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=0.8\linewidth]{img/chapter3/three_sizes/integrated_mu_gas.png}};
+		\node[anchor=north east, xshift=-8pt, yshift=-40pt] at (img1.north east) {\textbf{(b)}};
+	\end{tikzpicture}
+	\caption{a) Integrated crystal fraction over the whole domain. 
+		b) Integrated crystal fraction over the top boundary, in red, and the bottom boundary, in blue}
+	\label{fig:gas_rho_vfc}
 \end{figure}
