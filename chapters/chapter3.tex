@@ -32,7 +32,7 @@ In this section I present the results of the \textit{base} simulation, starting 
 As it has already been mentioned, the initial temperature of the magmatic system is set to 900°C, whereas the temperature of the host rock domain follows the local geothermal gradient. 
 Figure \ref{fig:temperature}a shows the temperature evolution over 500 hundred years, while figure \ref{fig:temperature}b shows the integrated temperature time series over that same period of simulated time. As it can be seen, the temperature decrease during the first 60 years is quite steep, quickly going from 900°C to around 830°C, which translates into a cooling rate of 1.17 °C/year. From then on, the temperature is kept quasi constant. This is easily visible as well on the color scale, since the snapshots between 60 and 500 years seem to show the same temperature (light blue color); and more so on the integrate temperature plot, which shows an almost asymptotical behavior, with a sub-horizontal, negative slope of ~$0.004$. This slow cooling is not linear nor smooth, but instead adopts a stepped behavior, with local temperature minima followed by local maxima giving the curve its characteristic serrated shape.
 
-
+Figure \ref{fig:rock_2_points} shows the temperature evolution in two random points within the rock domain, located at 2 (red curve) and 30 (blue curve) meters above the intrusion. The closest point undergoes an stabilization phase during which the initial temperature profile equilibrates with the heat released by the magma and the boundary temperature. The further point, however, suffers a smoother heating over the years, of around 300°C. 
 
 \begin{figure}
 	\centering
@@ -45,15 +45,15 @@ Figure \ref{fig:temperature}a shows the temperature evolution over 500 hundred y
 		\node[anchor=north east, xshift=-8pt, yshift=-20pt] at (img2.north east) {\textbf{(b)}};
 	\end{tikzpicture}
 	
-	\caption{a) Shows snapshots of the simulations at different times up to 500 years. 
-		b) Shows the integrated temperature over the whole domain}
+	\caption{a) Snapshots of the simulations at different times up to 500 years. 
+		b) Integrated temperature profile over the whole domain. Notice the change in the curve evolution and its slope after approximately 50 years, marking the onset of crystallization.}
 	\label{fig:temperature}
 \end{figure}
 
 \begin{figure}
 	\centering
 	\includegraphics[width=1\linewidth]{img/chapter3/rocks_2_points.png}
-	\caption{Temperature field for the 2D convection 1c benchmark once it has reached the final steady state stage}
+	\caption{Temperature time series of two points selected above the intrusion, one at 2 meters, following the red curve, and the other one at 30 meters, following the blue curve.}
 	\label{fig:rock_2_points}
 \end{figure}
 
@@ -71,15 +71,15 @@ As time progresses, convection slows down and evolves into less organized and de
 		\node[inner sep=0pt] (img2) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/velocity/random_point.png}};
 		\node[anchor=north east, xshift=-8pt, yshift=-20pt] at (img2.north east) {\textbf{(b)}};
 	\end{tikzpicture}
-	\caption{a) Shows snapshots of the simulations at different times up to 500 years. 
-		b) Shows the integrated temperature over the whole domain}
+	\caption{a) Snapshots of the simulations showing the velocity at different times up to 500 years. 
+		b) Integrated velocity time series over the whole domain}
 	\label{fig:velocity}
 \end{figure}
 
 \begin{figure}
 	\centering
 	\includegraphics[width=1\linewidth]{img/chapter3/velocity/arrows_scaled.png}
-	\caption{Temperature field for the 2D convection 1c benchmark once it has reached the final steady state stage}
+	\caption{Convective patterns at 0.7 years of simulated time, where the highest velocity is recorded for this simulation. Black arrows point the direction of convection and their size is scaled according the value of velocity.}
 	\label{fig:velocity_arrows}
 \end{figure}
 
@@ -102,15 +102,16 @@ However, in both boundaries some points show a different behavior: there are are
 		\node[inner sep=0pt] (img2) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/pressure/integrated_dp_1.png}};
 		\node[anchor=north east, xshift=-8pt, yshift=-20pt] at (img2.north east) {\textbf{(c)}};
 	\end{tikzpicture}
-	\caption{a) Shows snapshots of the simulations at different times up to 500 years. 
-		b) Shows the integrated temperature over the whole domain}
+	\caption{a) Snapshot of the initial pressure distribution in the magma chamber. 
+		b) Snapshots of the simulation portraying the pressure difference up to 500 years of simulated time.
+		c) Integrated pressure difference time series.}
 	\label{fig:pressure}
 \end{figure}
 
 \begin{figure}
 	\centering
 	\includegraphics[width=1\linewidth]{img/chapter3/pressure/dp_2.png}
-	\caption{Temperature field for the 2D convection 1c benchmark once it has reached the final steady state stage}
+	\caption{Snapshots of the difference in pressure at the earlier stages of the simulation, showing an over-pressure inversion after 2 years of simulated time}
 	\label{fig:dp_early}
 \end{figure}
 
@@ -126,7 +127,7 @@ Figure \ref{fig:integrated_vf_c}, on the other hand, shows the integrate crystal
 \begin{figure}
 	\centering
 	\includegraphics[width=1\linewidth]{img/chapter3/secondary_props/vf_c_g.png}
-	\caption{Volume fraction of gas and crystals}
+	\caption{Snapshots of the simulation sowing the volume fraction of gas on the left column and crystals on the right column, up to 500 years of simulated time.}
 	\label{fig:vf_c_g}
 \end{figure}
 
@@ -140,8 +141,8 @@ Figure \ref{fig:integrated_vf_c}, on the other hand, shows the integrate crystal
 		\node[inner sep=0pt] (img2) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/secondary_props/integrated_vf_c_boundaries.png}};
 		\node[anchor=north east, xshift=-8pt, yshift=-30pt] at (img2.north east) {\textbf{(b)}};
 	\end{tikzpicture}
-	\caption{a) Integrated crystal fraction over the whole domain. 
-		b) Integrated crystal fraction over the top boundary, in red, and the bottom boundary, in blue}
+	\caption{a) Integrated crystal fraction time series over the whole magma domain. 
+		b) Integrated crystal fraction time series over the top boundary, in red, and the bottom boundary, in blue}
 	\label{fig:integrated_vf_c}
 \end{figure}
 
@@ -155,8 +156,8 @@ Figure \ref{fig:integrated_vf_c}, on the other hand, shows the integrate crystal
 		\node[inner sep=0pt] (img2) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/secondary_props/integrated_vf_g_boundaries.png}};
 		\node[anchor=north east, xshift=-8pt, yshift=-30pt] at (img2.north east) {\textbf{(b)}};
 	\end{tikzpicture}
-	\caption{a) Integrated crystal fraction over the whole domain. 
-		b) Integrated crystal fraction over the top boundary, in red, and the bottom boundary, in blue}
+	\caption{a) Integrated gas fraction time series over the whole magma domain. 
+	b) Integrated gas fraction time series over the top boundary, in red, and the bottom boundary, in blue}
 	\label{fig:integrated_vf_g}
 \end{figure}
 
@@ -170,15 +171,16 @@ Density is very sensitive to crystallization and, especially, gas exsolution. Th
 		\node[anchor=north east, xshift=-8pt, yshift=-3pt] at (img1.north east) {\textbf{(a)}};
 	\end{tikzpicture}
 	\begin{tikzpicture}
-		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/secondary_props/integrated_rho_domain.png}};
+		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=0.92\linewidth]{img/chapter3/secondary_props/integrated_rho_domain.png}};
 		\node[anchor=north east, xshift=-8pt, yshift=-40pt] at (img1.north east) {\textbf{(b)}};
 	\end{tikzpicture}
 	\begin{tikzpicture}
-		\node[inner sep=0pt] (img2) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/secondary_props/integrated_rho_boundaries.png}};
+		\node[inner sep=0pt] (img2) at (0,0) {\includegraphics[width=0.92\linewidth]{img/chapter3/secondary_props/integrated_rho_boundaries.png}};
 		\node[anchor=north east, xshift=-8pt, yshift=-30pt] at (img2.north east) {\textbf{(c)}};
 	\end{tikzpicture}
-	\caption{a) Integrated crystal fraction over the whole domain. 
-		b) Integrated crystal fraction over the top boundary, in red, and the bottom boundary, in blue}
+	\caption{a) Snapshots of the magma density after 500 years. Notice the individual color scale bars for each individual snapshot. 
+		b) Integrated density time series over the whole magma domain.
+		c) Integrated density time series over the top boundary, in red, and the bottom boundary, in blue.}
 	\label{fig:rho}
 \end{figure}
 
@@ -188,7 +190,7 @@ Similarly as the rest of the properties, the evolution of the specific heat capa
 \begin{figure}
 	\centering
 	\includegraphics[width=1\linewidth]{img/chapter3/secondary_props/cp_kappa.png}
-	\caption{Snapshots of density}
+    \caption{Snapshots of the heat capacity (on the left column) and thermal conductivity (right column) distributions up to 500 years}
 	\label{fig:cp_kappa}
 \end{figure}
 
@@ -202,15 +204,16 @@ Viscosity, as mentioned in the previous chapter, ranges immensely, and small var
 		\node[anchor=north east, xshift=-8pt, yshift=-3pt] at (img1.north east) {\textbf{(a)}};
 	\end{tikzpicture}
 	\begin{tikzpicture}
-		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/secondary_props/integrated_mu_domain.png}};
+		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=0.95\linewidth]{img/chapter3/secondary_props/integrated_mu_domain.png}};
 		\node[anchor=north east, xshift=-8pt, yshift=-40pt] at (img1.north east) {\textbf{(b)}};
 	\end{tikzpicture}
 	\begin{tikzpicture}
-		\node[inner sep=0pt] (img2) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/secondary_props/integrated_mu_boundaries.png}};
+		\node[inner sep=0pt] (img2) at (0,0) {\includegraphics[width=0.95\linewidth]{img/chapter3/secondary_props/integrated_mu_boundaries.png}};
 		\node[anchor=north east, xshift=-8pt, yshift=-30pt] at (img2.north east) {\textbf{(c)}};
 	\end{tikzpicture}
-	\caption{a) Integrated crystal fraction over the whole domain. 
-		b) Integrated crystal fraction over the top boundary, in red, and the bottom boundary, in blue}
+	\caption{a) Snapshots of the viscosity distribution up to 500 years. 
+		b) Integrated viscosity over the whole magma domain.
+		c) Integrated viscosity over the top (red curve) and bottom (blue curve) boundaries. }
 	\label{fig:mu}
 \end{figure}
 
@@ -228,8 +231,8 @@ However the characteristics of the cooling process are for each of the simulated
 
 \begin{figure}
 	\centering
-	\includegraphics[width=1\linewidth]{img/chapter3/three_sizes/sizes_comparation.png}
-	\caption{Snapshots of density}
+	\includegraphics[width=1\linewidth]{img/chapter3/three_sizes/sizes_comparation_notted.png}
+	\caption{Comparative plot of the time series of the integrated temperature for the three simulated sizes: small (blue), medium (green) and large (red).}
 	\label{fig:3_size_T}
 \end{figure}
 
@@ -240,7 +243,8 @@ The peak velocity, in all three cases, occurs at the early stages of the simulat
 \begin{figure}
 	\centering
 	\includegraphics[width=1\linewidth]{img/chapter3/three_sizes/velocities.png}
-	\caption{Snapshots of density}
+	\caption{The top row shows the integrated velocity time series of an arbitrary area selected in the interior of the magma domain for the small (blue), medium (green) and large (red) simulations. The solid line represent the averaged velocity over the points, while the dashed line shows the maximum recorded velocity.
+	The bottom plot shows the integrated velocity over the whole domain for the three simulated sizes, following the same color code as above.}
 	\label{fig:3_size_v}
 \end{figure}
 
@@ -252,7 +256,7 @@ Figure \ref{fig:3_size_dp} shows the three chamber's integrated difference in pr
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.75\linewidth]{img/chapter3/three_sizes/3_sizes_ic.png}
-	\caption{Snapshots of density}
+	\caption{Snapshots of the initial pressure distribution for the three bodies.}
 	\label{fig:3_size_initial_p}
 \end{figure}
 
@@ -260,29 +264,28 @@ Figure \ref{fig:3_size_dp} shows the three chamber's integrated difference in pr
 \begin{figure}
 	\centering
 	\includegraphics[width=1\linewidth]{img/chapter3/three_sizes/integrated_dp.png}
-	\caption{Snapshots of density}
+	\caption{Time series of the pressure difference (current time step pressure minus previous time step pressure) for the three bodies.}
 	\label{fig:3_size_dp}
 \end{figure}
 
 \subsubsection{On the secondary properties}
-Figure \ref{fig:rho_vfc_mu_sizes} shows the compared integrated values of two of the secondary properties of interest for the \textit{small}, \textit{medium} and \textit{large} simulations, which are the density (\ref{fig:rho_vfc_mu_sizes}a), volume fraction of crystals (\ref{fig:rho_vfc_mu_sizes}b) and viscosity (\ref{fig:rho_vfc_mu_sizes}c). 
+Figure \ref{fig:rho_vfc_mu_sizes} shows the compared integrated values of two of the secondary properties of interest for the \textit{small}, \textit{medium} and \textit{large} simulations, which are the density (\ref{fig:rho_vfc_mu_sizes}a), volume fraction of crystals (\ref{fig:rho_vfc_mu_sizes}b) and viscosity (\ref{fig:rho_vfc_mu_sizes}c). Density plots show a steeper increase in the \textit{large} and \textit{small} sizes. The three curves stabilize once the onset of extensive crystallization is reached, showing little variation from that point on. The \textit{large} body shows an stabilized density of around 2150 kg/m³, followed by the \textit{medium} body, with a density of around 2140 kg/m³, and finally the \textit{small}, with a density of approximately 2130 kg/m³. Following with the volume fraction of crystals or crystallinity, it can be seen that its evolution is characterized by a sharp increase in the \textit{small} body after some initial years of slight oscillations. The \textit{large} body, however, undergoes a sharp, but short in time, increase in crystallinity, which then evolves following a smoother trend with a serrated curve. The \textit{medium} body is the last to start to crystallize, as it was also appreciable in the temperature profile (figure \ref{fig:3_size_T}), surpassing the \textit{large} crystallinity curve, therefore presenting a higher crystal fraction after ~50 years. Notably, the crystallinity oscillations become sharper and more pronounced as the body size decreases. Regarding the last plotted secondary properties, the viscosity, there are come interesting features that can be appreciated. The obvious one are the local maxima or spikes that can be seen in the \textit{small} and \textit{large} bodies, which are between 3 and 4 orders of magnitude larger than the background, stable viscosity. This phenomena is related to crystallization and will be further discussed in the following chapter. Other remarkable feature is that the curves do not present the same organization as for the other two properties in which there was a clear distribution by increasing or decreasing size. In the case of viscosity, more viscous magma (looking at the background data and not at the local maxima) is the \textit{medium} sized body, followed by the \textit{small} and lastly, the \textit{large} bodies, which present almost identical viscosity values. 
 
 \begin{figure}
 	\centering
 	\begin{tikzpicture}
-		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=0.8\linewidth]{img/chapter3/three_sizes/integrated_rho_size.png}};
+		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=0.85\linewidth]{img/chapter3/three_sizes/integrated_rho_size.png}};
 		\node[anchor=north east, xshift=-8pt, yshift=-3pt] at (img1.north east) {\textbf{(a)}};
 	\end{tikzpicture}
 	\begin{tikzpicture}
-		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=0.8\linewidth]{img/chapter3/three_sizes/integrated_vfc_size.png}};
+		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=0.85\linewidth]{img/chapter3/three_sizes/integrated_vfc_size.png}};
 		\node[anchor=north east, xshift=-8pt, yshift=-40pt] at (img1.north east) {\textbf{(b)}};
 	\end{tikzpicture}
 	\begin{tikzpicture}
-		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=0.8\linewidth]{img/chapter3/three_sizes/integrated_mu_gas.png}};
+		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=0.85\linewidth]{img/chapter3/three_sizes/integrated_mu_size.png}};
 		\node[anchor=north east, xshift=-8pt, yshift=-40pt] at (img1.north east) {\textbf{(b)}};
 	\end{tikzpicture}
-	\caption{a) Integrated crystal fraction over the whole domain. 
-		b) Integrated crystal fraction over the top boundary, in red, and the bottom boundary, in blue}
+	\caption{Integrated density (a), crystal volume fraction (b) and viscosity (c) time evolution for the three simulated sizes.}
 	\label{fig:rho_vfc_mu_sizes}
 \end{figure}
 
@@ -294,8 +297,8 @@ Figure \ref{fig:45_50_temperature} shows the integrated temperature time series 
 
 \begin{figure}
 	\centering
-	\includegraphics[width=1\linewidth]{img/chapter3/three_sizes/integrated_T_45_50.png}
-	\caption{Snapshots of density}
+	\includegraphics[width=1\linewidth]{img/chapter3/three_sizes/integrated_45_50_T_tags.png}
+	\caption{Integrated temperature profile for the 45 MPa, in green and the 50 MPa, in brown, simulations.}
 	\label{fig:45_50_temperature}
 \end{figure}
 
@@ -312,8 +315,8 @@ Regarding the velocity and the effect of pressure, there are no significant chan
 		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/three_sizes/velocity_45_50.png}};
 		\node[anchor=north east, xshift=-8pt, yshift=-40pt] at (img1.north east) {\textbf{(b)}};
 	\end{tikzpicture}
-	\caption{a) Integrated crystal fraction over the whole domain. 
-		b) Integrated crystal fraction over the top boundary, in red, and the bottom boundary, in blue}
+	\caption{Top row plots show the integrated velocity time series of an arbitrary area
+		selected in the interior of the magma domain for the 50 MPa simulation. The solid line represent the averaged velocity over the points, while the dashed line shows the maximum recorded velocity. The bottom plot shows the integrated velocity over the whole domain for both the 45 and the 50 MPa simulations.}
 	\label{fig:45_50_velocity}
 \end{figure}
 
@@ -330,31 +333,30 @@ The initial pressure distribution is portrayed in figure \ref{fig:45_50_pressure
 		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=1\linewidth]{img/chapter3/three_sizes/45_50_dp.png}};
 		\node[anchor=north east, xshift=-8pt, yshift=-40pt] at (img1.north east) {\textbf{(b)}};
 	\end{tikzpicture}
-	\caption{a) Integrated crystal fraction over the whole domain. 
-		b) Integrated crystal fraction over the top boundary, in red, and the bottom boundary, in blue}
+	\caption{a) Shows snapshots of the initial pressure distribution for the 45 and 50 MPa simulations. 
+	b) Shows the integrated pressure difference (p$_{t}$-p$_{t-1}$) for the 45 MPa, in green, and 50 MPa, in brown.}
 	\label{fig:45_50_pressure}
 \end{figure}
 
 \subsubsection{On the secondary properties}
-Figure \ref{fig:45_50_rho_vfc} shows the integrated values of density (\ref{fig:45_50_rho_vfc}a), volume fraction of crystals (\ref{fig:45_50_rho_vfc}b) and viscosity (\ref{fig:45_50_rho_vfc}c) as a comparison for the 45 MPa and the 50 MPa simulations. There are two immediate appreciable phenomena occurring: in the density plot, there is a consistent density difference of approximately 30 kg/m$^3$ between both curves, with the higher pressure simulation being the denser. The other feature that can be seen is a, also consistent, higher crystallinity of the lower pressure simulation, which is, also, the least dense. Some change can be also appreciate in the viscosity evolution: when the system is evolving during the first 50 years the viscosity of the 50 MPa simulation is lower than the the less pressurized simulation. However, after approximately 50 years, coinciding with the onset of the extensive crystallization, the trend is inverted, and the vicosity of the higher pressure body is also higher. 
+Figure \ref{fig:45_50_rho_vfc} shows the integrated values of density (\ref{fig:45_50_rho_vfc}a), volume fraction of crystals (\ref{fig:45_50_rho_vfc}b) and viscosity (\ref{fig:45_50_rho_vfc}c) as a comparison for the 45 MPa and the 50 MPa simulations. There are two immediate appreciable phenomena occurring: in the density plot, there is a consistent density difference of approximately 30 kg/m$^3$ between both curves, with the higher pressure simulation being the denser. The other feature that can be seen is a, also consistent, higher crystallinity of the lower pressure simulation, which is, also, the least dense. Some change can be also appreciate in the viscosity evolution: when the system is evolving during the first 50 years the viscosity of the 50 MPa simulation is lower than the the less pressurized simulation. However, after approximately 50 years, coinciding with the onset of the extensive crystallization, the trend is inverted, and the viscosity of the higher pressure body is also higher. 
 
 
 \begin{figure}
 	\centering
 	\begin{tikzpicture}
 		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=0.8\linewidth]{img/chapter3/three_sizes/rho_45_50.png}};
-		\node[anchor=north east, xshift=-8pt, yshift=-3pt] at (img1.north east) {\textbf{(a)}};
+		\node[anchor=north east, xshift=-0pt, yshift=-0pt] at (img1.north east) {\textbf{(a)}};
 	\end{tikzpicture}
 	\begin{tikzpicture}
 		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=0.8\linewidth]{img/chapter3/three_sizes/integrated_vf_c_45_50.png}};
-		\node[anchor=north east, xshift=-8pt, yshift=-40pt] at (img1.north east) {\textbf{(b)}};
+		\node[anchor=north east, xshift=-0pt, yshift=-1pt] at (img1.north east) {\textbf{(b)}};
 	\end{tikzpicture}
 	\begin{tikzpicture}
 		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=0.8\linewidth]{img/chapter3/three_sizes/integrated_mu_45_50.png}};
-		\node[anchor=north east, xshift=-8pt, yshift=-40pt] at (img1.north east) {\textbf{(b)}};
+		\node[anchor=north east, xshift=-0pt, yshift=-1pt] at (img1.north east) {\textbf{(c)}};
 	\end{tikzpicture}
-	\caption{a) Integrated crystal fraction over the whole domain. 
-		b) Integrated crystal fraction over the top boundary, in red, and the bottom boundary, in blue}
+	\caption{Integrated density (a), volume fraction of crystals (b) and viscosity (c) for the 45 (green curves) and 50 MPa (brown curves) simulations.}
 	\label{fig:45_50_rho_vfc}
 \end{figure}
 
@@ -364,8 +366,8 @@ Figure \ref{fig:45_50_rho_vfc} shows the integrated values of density (\ref{fig:
 Figure \ref{fig:gas_temperature} shows the integrated temperature over the magma domain for the three simulated contents in volatiles. A lower gas content delays the onset of crystallization, producing an initial cooling curve, with a more gentle slope with respect to the base simulation, or, in other words, the intermediate gas content simulation, and with the quasi-steady cooling behavior occurring at just one or two degrees cooler temperature. Higher gas content, however, shows the opposite behavior, cooling faster at the early stages, and initiating the quasi-steady cooling earlier in time (approximately 20 years earlier) and in temperature (almost 5°C hotter). Both of these phenomena will be explained in more detail in the following chapter.
 \begin{figure}
 	\centering
-	\includegraphics[width=1\linewidth]{img/chapter3/three_sizes/integrated_T_gas.png}
-	\caption{Snapshots of density}
+	\includegraphics[width=1\linewidth]{img/chapter3/three_sizes/integrated_T_gas_tags.png}
+	\caption{Integrated temperature time series for the three volatile variations simulated in this work: high, in yellow; low, in pink and base, or medium gas content, in green.}
 	\label{fig:gas_temperature}
 \end{figure}
 \subsubsection{On the velocity}
@@ -373,7 +375,8 @@ Velocities show similar trends as for the rest of the simulations. Maximum reach
 \begin{figure}
 	\centering
 	\includegraphics[width=1\linewidth]{img/chapter3/three_sizes/veolocities_gas.png}
-	\caption{Snapshots of density}
+	\caption{Top row plots show the integrated velocity time series of an arbitrary area
+		selected in the interior of the magma domain for the high (yellow) and low (pink) simulations. The solid line represent the averaged velocity over the points, while the dashed line shows the maximum recorded velocity. The bottom plot shows the integrated velocity over the whole domain for the three volatile content.}
 	\label{fig:gas_velocities}
 \end{figure}
 
@@ -382,7 +385,7 @@ Regarding the pressure, there are some features appreciable in the pressure diff
 \begin{figure}
 	\centering
 	\includegraphics[width=1\linewidth]{img/chapter3/three_sizes/integrated_dp_gas.png}
-	\caption{Snapshots of density}
+	\caption{Plot shows the integrated pressure difference time series for the three simulated volatile content.}
 	\label{fig:gas_dp}
 \end{figure}
 
@@ -394,17 +397,16 @@ As with the pressure comparison plots, figure \ref{fig:gas_rho_vfc} displays the
 	\centering
 	\begin{tikzpicture}
 		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=0.8\linewidth]{img/chapter3/three_sizes/rho_gas.png}};
-		\node[anchor=north east, xshift=-8pt, yshift=-3pt] at (img1.north east) {\textbf{(a)}};
+		\node[anchor=north east, xshift=-8pt, yshift=-0pt] at (img1.north east) {\textbf{(a)}};
 	\end{tikzpicture}
 	\begin{tikzpicture}
 		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=0.8\linewidth]{img/chapter3/three_sizes/integrated_vf_c_all_gas.png}};
-		\node[anchor=north east, xshift=-8pt, yshift=-40pt] at (img1.north east) {\textbf{(b)}};
+		\node[anchor=north east, xshift=-8pt, yshift=-0pt] at (img1.north east) {\textbf{(b)}};
 	\end{tikzpicture}
 	\begin{tikzpicture}
 		\node[inner sep=0pt] (img1) at (0,0) {\includegraphics[width=0.8\linewidth]{img/chapter3/three_sizes/integrated_mu_gas.png}};
-		\node[anchor=north east, xshift=-8pt, yshift=-40pt] at (img1.north east) {\textbf{(b)}};
+		\node[anchor=north east, xshift=-8pt, yshift=-0pt] at (img1.north east) {\textbf{(b)}};
 	\end{tikzpicture}
-	\caption{a) Integrated crystal fraction over the whole domain. 
-		b) Integrated crystal fraction over the top boundary, in red, and the bottom boundary, in blue}
+	\caption{Integrated density (a), volume fraction of crystals (b) and viscosity (c) for the higher (yellow curves), medium (green curves) and low (pink curves) gas content simulations.}
 	\label{fig:gas_rho_vfc}
 \end{figure}
