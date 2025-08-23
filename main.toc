@@ -77,4 +77,4 @@
 \contentsline {subsubsection}{On the secondary properties}{91}{subsubsection*.86}%
 \contentsline {chapter}{\numberline {4}Discussion}{95}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Results analysis}{95}{section.4.1}%
-\contentsline {chapter}{Bibliography}{103}{section*.91}%
+\contentsline {chapter}{Bibliography}{107}{section*.92}%

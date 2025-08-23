@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.7.29)  22 AUG 2025 09:20
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.7.29)  22 AUG 2025 13:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2879,10 +2879,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [99]
-
-LaTeX Warning: Reference `' on page 100 undefined on input line 30.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2899,6 +2895,31 @@ File: img/chapter4/dp_rho_1.png Graphic file (type bmp)
 <img/chapter4/dp_rho_1.png>
 File: img/chapter4/dp_rho_2.png Graphic file (type bmp)
 <img/chapter4/dp_rho_2.png>
+
+Underfull \vbox (badness 4303) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[101]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[102]
 File: img/chapter4/vf_l_73.png Graphic file (type bmp)
 <img/chapter4/vf_l_73.png>
 File: img/chapter4/vf_l_74.png Graphic file (type bmp)
@@ -2909,8 +2930,12 @@ File: img/chapter4/vf_l_76.png Graphic file (type bmp)
 <img/chapter4/vf_l_76.png>
 
 
-LaTeX Warning: Float too large for page by 7.4555pt on input line 68.
+LaTeX Warning: Float too large for page by 7.4555pt on input line 69.
 
+File: img/chapter4/dp_vel.png Graphic file (type bmp)
+<img/chapter4/dp_vel.png>
+File: img/chapter4/vel_rho.png Graphic file (type bmp)
+<img/chapter4/vel_rho.png>
 )
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2920,36 +2945,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[101]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[102]
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 248.
- (./main.bbl
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 7.
-
-Underfull \hbox (badness 3492) in paragraph at lines 47--51
-[]\TU/TeXGyreTermesX(0)/m/n/10.95 Jon Blundy, Kathy Cashman, and Madeleine Hump
-hreys.  Magma heating by
- []
-
-[103
-
-
-]
-Underfull \hbox (badness 1701) in paragraph at lines 115--119
-[]\TU/TeXGyreTermesX(0)/m/n/10.95 John Eichelberger.  Distribution and transpor
-t of thermal energy within magma–
- []
-
+[103]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2967,25 +2963,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[105]
+[105] [106
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
+]
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 10.95pt on input line 248.
+ (./main.bbl
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/it' will be
+(Font)              scaled to size 10.95pt on input line 7.
 
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+Underfull \hbox (badness 3492) in paragraph at lines 47--51
+[]\TU/TeXGyreTermesX(0)/m/n/10.95 Jon Blundy, Kathy Cashman, and Madeleine Hump
+hreys.  Magma heating by
+ []
 
-[106]
+[107
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
+]
+Underfull \hbox (badness 1701) in paragraph at lines 115--119
+[]\TU/TeXGyreTermesX(0)/m/n/10.95 John Eichelberger.  Distribution and transpor
+t of thermal energy within magma–
+ []
 
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[107]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2995,6 +2994,42 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [108]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[109]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[110]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[111]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[112]
 Underfull \hbox (badness 2088) in paragraph at lines 463--468
 []\TU/TeXGyreTermesX(0)/m/n/10.95 Kristján Sœmundsson.  Geology of krafla volca
 nic system.  In Árni Einarsson
@@ -3008,7 +3043,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[109])
+[113])
 
 Package glossaries Warning: No \printglossary or \printglossaries found. 
 (Remove \makeglossaries if you don't want any glossaries.) 
@@ -3022,7 +3057,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[110] (./main.aux)
+[114] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -3034,22 +3069,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 7C5AF6E5F8C290EE2019140090325C83;5355
-(rerunfilecheck)             After:  0C9B2B3ECE93F6EC8695CA0E97F57AEB;5355.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 6B70B602DAF6ACE7784C51E6E8079F02;5355.
  ) 
 Here is how much of TeX's memory you used:
- 38905 strings out of 476835
- 752065 string characters out of 5803245
+ 38923 strings out of 476835
+ 752572 string characters out of 5803245
  1937627 words of memory out of 5000000
- 59958 multiletter control sequences out of 15000+600000
+ 59974 multiletter control sequences out of 15000+600000
  623131 words of font info for 217 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  106i,18n,107p,4254b,734s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (120 pages).
+Output written on main.pdf (124 pages).
